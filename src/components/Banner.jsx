@@ -21,11 +21,9 @@ const Banner = () => {
               >
                 <div class="d-flex justify-content-center align-items-center h-100">
                   <div class="text-white w-75">
-                    <h1 class="mb-3">Lorem ipsum dolor sit</h1>
+                    <h1 class="mb-3 text-warning">Welcome to Knowledge and Learning world</h1>
                     <h6 class="mb-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nobis, perspiciatis. Laborum possimus voluptatum
-                      repudiandae eius!
+                    Reading books is a timeless and invaluable activity that offers numerous benefits to individuals and society as a whole.Books are a vast source of information and knowledge. They enable individuals to learn about a wide range of topics, from history and science to culture and philosophy.
                     </h6>
                     <a
                       class="btn btn-outline-light btn-lg"
