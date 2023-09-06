@@ -5,60 +5,78 @@ const BookUploadForm = () => {
     <div className="p-3 bg-light">
       <form class="row g-3">
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">
-            Email
+          <label for="inputBookName" class="form-label">
+            Book Name
           </label>
-          <input type="email" class="form-control" id="inputEmail4" />
+          <input
+            type="text"
+            name="bookName"
+            class="form-control"
+            id="inputBookName"
+            placeholder="enter book name"
+          />
         </div>
         <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">
-            Password
-          </label>
-          <input type="password" class="form-control" id="inputPassword4" />
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">
-            Address
+          <label for="inputAuthorName" class="form-label">
+            Author Name
           </label>
           <input
             type="text"
             class="form-control"
-            id="inputAddress"
-            placeholder="1234 Main St"
-          />
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">
-            Address 2
-          </label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress2"
-            placeholder="Apartment, studio, or floor"
+            name="authorName"
+            id="inputAuthorName"
+            placeholder="enter author name"
           />
         </div>
         <div class="col-md-6">
-          <label for="inputCity" class="form-label">
-            City
+          <label for="" class="form-label">
+            ImageUrl
           </label>
-          <input type="text" class="form-control" id="inputCity" />
+          <input
+            type="text"
+            name="imgUrl"
+            placeholder="enter your image url"
+            class="form-control"
+            id=""
+          />
         </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">
-            State
+        <div class="col-md-6">
+          <label for="" class="form-label">
+            Category Name
           </label>
-          <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
+          <input
+            type="text"
+            name="categoryName"
+            placeholder="Category name"
+            class="form-control"
+            id=""
+          />
         </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">
-            Zip
+        <div class="col-md-6">
+          <label for="" class="form-label">
+            Text Description
           </label>
-          <input type="text" class="form-control" id="inputZip" />
+          <input
+            type="text"
+            name="metaTextDescription"
+            placeholder="text description"
+            class="form-control"
+            id=""
+          />
         </div>
+        <div class="col-md-6">
+          <label for="" class="form-label">
+            Book Pdf Url
+          </label>
+          <input
+            type="text"
+            name="bookPdfUrl"
+            placeholder="enter your book pdf url"
+            class="form-control"
+            id=""
+          />
+        </div>
+
         <div class="col-12">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck" />

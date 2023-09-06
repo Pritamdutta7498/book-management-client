@@ -4,7 +4,7 @@ import BookUploadForm from "../../components/BookUploadForm";
 const UploadBooks = () => {
   return (
     <div>
-      UploadBooks
+      
       <BookUploadForm />
     </div>
   );

@@ -20,13 +20,13 @@ const Banner = () => {
                 style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
               >
                 <div class="d-flex justify-content-center align-items-center h-100">
-                  <div class="text-white w-75">
+                  <div class="text-white text-center w-75">
                     <h1 class="mb-3 text-warning">Welcome to Knowledge and Learning world</h1>
-                    <h6 class="mb-3">
-                    Reading books is a timeless and invaluable activity that offers numerous benefits to individuals and society as a whole.Books are a vast source of information and knowledge. They enable individuals to learn about a wide range of topics, from history and science to culture and philosophy.
+                    <h6 class="mb-3 d-flex  ">
+                    Reading books is a timeless and invaluable activity that offers numerous benefits to individuals and society as a whole.Books are a vast source of information and knowledge. They enable individuals to learn about a wide range of topics, from history and science to culture and philosophy.Reading stimulates the brain, improving cognitive functions such as critical thinking, problem-solving, and vocabulary
                     </h6>
                     <a
-                      class="btn btn-outline-light btn-lg"
+                      class="btn btn-outline-warning w-50 btn-lg"
                       href="#!"
                       role="button"
                     >
