@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BookCard = ({book}) => {
   const {_id,bookName,authorName,imageUrl,categoryName,metaTextDescription,bookPdfUrl} = book;
-  console.log(_id);
+  // console.log(_id);
  
   return (
     <div class="col">
