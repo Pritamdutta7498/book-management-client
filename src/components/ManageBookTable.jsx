@@ -8,12 +8,23 @@ const ManageBookTable = () => {
       .then((data) => setAllBooks(data));
   }, []);
 
+  // delete btn implementation
+
+  const handleDeleteBtn = (id) => {
+    fetch(`http://localhost:5000/book/${id}`, {
+      method: "DELETE",
+    })
+    .then(res => res.json())
+    .then(data=> {console.log(data)})
+  };
+
   return (
     <div>
       <table className="table table-dark table-striped">
         <thead>
-          <tr >
-            <th scope="col" >Book Name</th>
+          <tr>
+            <th scope="col">SL</th>
+            <th scope="col">Book Name</th>
             <th scope="col">Author Name</th>
             <th scope="col">category Name</th>
             <th scope="col">Action</th>
@@ -21,12 +32,15 @@ const ManageBookTable = () => {
         </thead>
         <tbody>
           {allBooks.map((book, index) => (
-            <tr key={index} >
-              <th scope="row" >{book.bookName}</th>
+            <tr key={index}>
+              <th scope="row">{index + 1}</th>
+              <th scope="row">{book.bookName}</th>
               <td>{book.authorName}</td>
               <td>{book.categoryName}</td>
               <td>
-                <button>Delete</button>
+                <button onClick={() => handleDeleteBtn(book._id)}>
+                  Delete
+                </button>
                 <button>Update</button>
               </td>
             </tr>
