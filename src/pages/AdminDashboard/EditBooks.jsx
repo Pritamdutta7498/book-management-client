@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 
 const EditBooks = () => {
   const { id } = useParams();
-  // http://localhost:5000/all-books/64f885ccf46f1a892de98c8b
 
   const [singleBook, setSingleBook] = useState([]);
   useEffect(() => {
