@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ManageBookTable = () => {
   const [allBooks, setAllBooks] = useState([]);
@@ -38,10 +39,10 @@ const ManageBookTable = () => {
               <td>{book.authorName}</td>
               <td>{book.categoryName}</td>
               <td>
-                <button onClick={() => handleDeleteBtn(book._id)}>
+                <button onClick={() => handleDeleteBtn(book._id)} className="btn btn-warning ms-2">
                   Delete
                 </button>
-                <button>Update</button>
+               <Link to={`/admin/dashboard/edit-books/${book._id}` } className="btn btn-success ms-2">Update</Link>
               </td>
             </tr>
           ))}
